@@ -1,4 +1,5 @@
 export default class User {
+    #nome
     constructor(nome, email, nascimento, role, ativo = true) {
         this.nome = nome
         this.email = email
@@ -7,7 +8,7 @@ export default class User {
         this.ativo = ativo
     }
     exibirInfos() {
-        return `${this.nome}, ${this.email}, ${this.nascimento}`
+        return `${this.#nome}, ${this.email}, ${this.nascimento}`
     }
 }
 
